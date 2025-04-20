@@ -2,10 +2,13 @@
 *.egg-info
 build/
 dist/
-venv/
+.venv/
 .*swp
 pyinfra-debug.log
 
 .vagrant*
 
 example/ssh_config
+
+.pytest_cache
+__pycache__

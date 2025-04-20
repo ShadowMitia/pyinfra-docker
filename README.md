@@ -2,9 +2,10 @@
 
 A basic [pyinfra](https://pyinfra.com) deploy that installs and optionally configures Docker on the target hosts. Officially tested & supported Linux distributions:
 
-+ Ubuntu 16/18/20
-+ Debian 8/9/10
-+ CentOS 7/8
++ Ubuntu 24.04
++ Debian 12
++ Alma Linux 9
++ Fedora 41
 
 This deploy installs packages in the `docker-ce` ecosystem (`docker-ce`/`docker-ce-cli`/`docker-ce-rootless-extras`) You can specify `docker_version` in the host data and it will install that version for all `docker-ce` packages.
 

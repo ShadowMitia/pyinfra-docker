@@ -1,10 +1,9 @@
-from pyinfra import config
+from pyinfra.context import config
 from pyinfra.operations import server
 
 from pyinfra_docker import deploy_docker
 
 config.SUDO = True
-
 
 deploy_docker(
     config={
@@ -12,7 +11,6 @@ deploy_docker(
         "debug": True,
     },
 )
-
 
 server.service(
     name="Ensure docker service is running",

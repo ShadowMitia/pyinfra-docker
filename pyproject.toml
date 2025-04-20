@@ -1,0 +1,27 @@
+[project]
+name = "pyinfra-docker"
+version = "3.0.0"
+description = "Install & configure Docker with `pyinfra`."
+authors = [
+    {name = "Nick Fizzadar", email = "nick@fizzadar.com"}
+]
+maintainers = [
+    {name = "David Kovari", email = "david@kovari.io"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyinfra (>=3.2,<4.0)"
+]
+license = "MIT"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-testinfra = "^10.2.2"

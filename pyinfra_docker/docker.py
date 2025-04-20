@@ -19,6 +19,7 @@ def get_pkgs_to_install(operator):
         "docker-ce",
         "docker-ce-cli",
         "docker-ce-rootless-extras",
+        "docker-compose-plugin"
     ]
     if not host.data.docker_version:
         return docker_packages

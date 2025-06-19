@@ -28,12 +28,12 @@ def get_pkgs_to_install(operator):
 
 
 def _apt_install(packages):
-    """apt.packages(
-        name="Install apt requirements to use HTTPS",
+    apt.packages(
+        name="Install Script Dependencies",
         packages=["apt-transport-https", "ca-certificates", "curl", "gnupg", "lsb-release"],
         update=True,
         cache_time=3600,
-    )"""
+    )
 
     lsb_release = host.get_fact(LsbRelease)
     lsb_id = lsb_release["id"].lower()
